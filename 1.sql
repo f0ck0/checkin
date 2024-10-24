@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY,
+    user_id TEXT NOT NULL UNIQUE,
+    points INTEGER DEFAULT 10  -- 初始积分为10
+);
+
+CREATE TABLE IF NOT EXISTS questions (
+    id INTEGER PRIMARY KEY,
+    question TEXT NOT NULL,
+    answer TEXT NOT NULL
+);
